@@ -33,3 +33,9 @@ Thumbs.db
 *.sln
 *.sw?
 .freebuff/
+
+# Documentation and design specs
+AGENTS.md
+DESIGN.md
+docs/
+frontend/docs/
