@@ -1,0 +1,10 @@
+{
+  "name": "tripsync",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npm --prefix frontend run build",
+    "test": "npm --prefix frontend test",
+    "dev": "npm --prefix frontend run dev"
+  }
+}

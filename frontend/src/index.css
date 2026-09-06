@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+  body {
+    @apply bg-periwinkle text-navy font-sans;
+    background-image: radial-gradient(1200px 600px at 85% -10%, rgba(37, 99, 235, 0.08), transparent 60%),
+      radial-gradient(900px 500px at -10% 20%, rgba(13, 148, 136, 0.06), transparent 55%);
+    background-attachment: fixed;
+  }
+  ::selection {
+    @apply bg-primary/20;
+  }
+}
+
+@layer components {
+  /* Frosted glass surfaces (light, premium — never dark-futuristic) */
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/60;
+  }
+  .glass-strong {
+    @apply bg-white/85 backdrop-blur-xl border border-white/70;
+  }
+  .card {
+    @apply bg-white rounded-2xl border border-navy/5 shadow-card;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl font-semibold transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-primary {
+    @apply btn bg-primary text-white px-4 py-2.5 hover:bg-primary-light active:scale-[0.98] shadow-sm;
+  }
+  .btn-secondary {
+    @apply btn bg-white text-navy border border-navy/10 px-4 py-2.5 hover:bg-periwinkle active:scale-[0.98];
+  }
+  .btn-ghost {
+    @apply btn text-primary px-3 py-2 hover:bg-primary-soft;
+  }
+  .btn-danger {
+    @apply btn bg-critical text-white px-4 py-2.5 hover:brightness-110 active:scale-[0.98];
+  }
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-semibold;
+  }
+  .input {
+    @apply w-full rounded-xl border border-navy/10 bg-white px-4 py-2.5 text-navy placeholder:text-ink-faint focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/40;
+  }
+  .section-title {
+    @apply text-lg font-bold text-navy;
+  }
+}
+
+/* Keep scrollbars tidy */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-navy/15 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-navy/25;
+}
+
+/* Respect prefers-reduced-motion for CSS-driven animations */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

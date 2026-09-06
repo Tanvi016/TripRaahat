@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 106" role="img" aria-label="TripSync">
+<g transform="translate(-2.114 -7.571) scale(1.01)">
+<path d="M 90.642,85.712 A 40 40 0 1 1 90.642,34.288" fill="none" stroke="#16233D" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 78.779,24.682 A 40 40 0 0 1 90.642,34.288" fill="none" stroke="#F59E0B" stroke-width="16" stroke-linecap="round"/>
+<path d="M 90.642,34.288 C 115.119,63.46 115.119,56.54 90.642,85.712" fill="none" stroke="#0D9488" stroke-width="16" stroke-linecap="round"/>
+</g>
+<text x="158" y="78.9" style="font-family:'Baloo 2','Nunito Sans','Segoe UI',system-ui,sans-serif;font-weight:600;font-size:100px;letter-spacing:-0.015em" fill="#16233D">TripSync</text>
+<circle cx="252.5" cy="12.1" r="8.5" fill="#F59E0B"/>
+</svg>
