@@ -1,4 +1,4 @@
-# TripSync — Travel Disruption Recovery
+# TripRaahat — Travel Disruption Recovery
 
 **One trip. Every booking. One intelligent recovery.**
 
